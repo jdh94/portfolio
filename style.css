@@ -113,6 +113,10 @@ p {
   color: white;
 }
 
+.navbar__logo a {
+  color: white;
+}
+
 .navbar__menu {
   display: flex;
 }
@@ -221,32 +225,39 @@ p {
   font-size: var(--font-small);
 }
 
-.job {
+.about__history {
+  display: flex;
+  flex-direction: row;
+}
+.history__left {
+  width: 50%;
+}
+.history__right {
+  width: 50%;
+}
+.history {
   display: flex;
   align-items: center;
 }
 
-.job__description {
+.history__description {
   margin: 0 16px;
   text-align: left;
 }
 
-.job__name,
-.job__period {
+.history__name,
+.history__period {
   color: var(--color-light-grey);
 }
 
-.job__name {
+.history__name {
   font-size: var(--font-small);
 }
 
-.job__period {
-  font-size: var(--font-micro);
-}
-
-.job__logo {
+.history__logo {
   width: 100px;
   height: 100px;
+  margin: 5px 0;
 }
 
 /* Skill */
@@ -286,7 +297,14 @@ p {
 }
 
 .skillset__right {
+  box-sizing: border-box;
   flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* height: 100%; */
+  /* align-items: center; */
 }
 .skillset__left {
   flex-basis: 60%;
@@ -300,6 +318,8 @@ p {
 
 .tools,
 .etc {
+  align-items: center;
+  height: 100%;
   padding: 20px;
 }
 
@@ -413,55 +433,15 @@ p {
   background-color: var(--color-dark-white);
 }
 
-/* Testimonial */
-#testimonials {
-  background-color: var(--color-light-white);
-}
-
-.testimonials {
-  margin: 40px;
-}
-
-.testimonial {
-  display: flex;
-  margin: 32px 0;
-}
-
-.testimonial__avatar {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-}
-
-.testimonial__avatar:nth-child(odd) {
-  margin-right: 40px;
-}
-
-.testimonial__avatar:nth-child(even) {
-  margin-left: 40px;
-}
-
-.testimonial__speech-bubble {
-  padding: 18px;
-  background-color: var(--color-white);
-  border-radius: var(--size-border-radius);
-}
-
-.testimonial__speech-bubble p {
-  color: var(--color-light-grey);
-}
-
-.testimonial__speech-bubble a {
-  color: var(--color-pink);
-}
-
 /* Contact */
 #contact {
   background-color: var(--color-blue);
 }
 
-.contact__title,
-.contact__email,
+.contact__title {
+  color: var(--color-black);
+}
+.contact__sns,
 .contact__rights {
   color: var(--color-white);
 }
