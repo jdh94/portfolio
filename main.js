@@ -13,7 +13,7 @@ document.addEventListener('scroll', () => {
   }
 });
 
-// handel scrollig when tapping on the navar
+// handel scrollig when tapping on the navbar
 const navbarMenu = document.querySelector('.navbar__menu');
 navbarMenu.addEventListener('click', (event) => {
   console.log(event.target);

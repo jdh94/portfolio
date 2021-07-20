@@ -488,10 +488,29 @@ p {
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
+  :root {
+    /* Font size */
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+  }
+
   .navbar__toggle-btn {
     display: block;
   }
 
+  #home {
+    padding: 50px;
+  }
+
+  .home__avatar {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* navbar */
   #navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -513,8 +532,16 @@ p {
     display: none;
   }
 
+  /* home */
+
   .about__history {
     flex-direction: column;
+  }
+
+  .about__majors {
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 0px;
   }
 
   .major {
