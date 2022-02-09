@@ -189,6 +189,10 @@ p {
 }
 
 /* About */
+.about__description {
+  text-align: left;
+}
+
 .about__majors {
   display: flex;
   justify-content: space-between;
