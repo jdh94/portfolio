@@ -250,7 +250,9 @@ p {
   text-align: left;
 }
 
-.history__name,
+.history__name {
+  color: var(--color-black);
+}
 .history__period {
   color: var(--color-light-grey);
 }
